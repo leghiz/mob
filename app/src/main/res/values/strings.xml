@@ -1,4 +1,21 @@
 <resources>
     <string name="app_name">HelloWorld</string>
     <string name="label_hello_world">HelloWorld</string>
+    <string name="main_ab_app_string">Пожалуй, лучший фитнес трекер в ДВФУ</string>
+    <string name="main_who_create">Созданный студентами</string>
+    <string name="main_ques_registration">Зарегистрироваться</string>
+    <string name="main_have_account">Уже есть аккаунт?</string>
+    <string name="abdo">Нажимая на кнопку, вы соглашаетесь с <a href="https://univer.dvfu.ru/">политикой конфиденциальности</a> и обработкой персональных данных, а также принимаете <a href="https://univer.dvfu.ru/">пользовательское соглашение</a></string>
+    <string name="login">Вход</string>
+    <string name="login2">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="other">Другое</string>
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+    <string name="sex">Пол</string>
+    <string name="nickname">Имя или никнейм</string>
+    <string name="repPass">Повторите пароль</string>
+    <string name="pass">Пароль</string>
+    <string name="registration">Регистрация</string>
+    <string name="IN">Войти</string>
 </resources>

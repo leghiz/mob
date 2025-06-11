@@ -13,7 +13,7 @@
         android:theme="@style/Theme.HelloWorld"
         tools:targetApi="31">
 
-        <activity android:name=".HelloWorld"
+        <activity android:name=".MainActivity"
             android:exported="true"
             tools:ignore="WrongManifestParent">
             <intent-filter>
@@ -21,6 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity android:name=".RegistrationActivity"
+            android:exported="true"/>
+
+        <activity android:name=".LogInActivity"
+            android:exported="true"/>
 
     </application>
 
