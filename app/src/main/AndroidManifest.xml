@@ -29,6 +29,10 @@
         <activity android:name=".LogInActivity"
             android:exported="true"/>
 
+        <activity android:name=".MainMainActivity"
+            android:exported="true">
+        </activity>
+
     </application>
 
 </manifest>

@@ -1,0 +1,5 @@
+<resources>
+    <style name="TextSize" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

@@ -14,12 +14,13 @@ class RegistrationActivity : AppCompatActivity() {
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        binding.registrationButt.setOnClickListener {
-        }
-
         binding.back.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
+        }
+
+        binding.registrationButt.setOnClickListener() {
+            val intent = Intent(this, MainMainActivity::class.java)
+            startActivity(intent)
         }
     }
 }

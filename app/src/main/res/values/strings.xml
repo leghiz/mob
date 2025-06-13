@@ -18,4 +18,6 @@
     <string name="pass">Пароль</string>
     <string name="registration">Регистрация</string>
     <string name="IN">Войти</string>
+    <string name="profile">Профиль</string>
+    <string name="activity">Активность</string>
 </resources>
