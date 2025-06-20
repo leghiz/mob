@@ -20,4 +20,19 @@
     <string name="IN">Войти</string>
     <string name="profile">Профиль</string>
     <string name="activity">Активность</string>
+    <string name="logIn">Логин</string>
+    <string name="save">Сохранить</string>
+    <string name="name_or_nickname">Имя или никнейм</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="logOut">Выйти</string>
+    <string name="comment">Комментарий</string>
+    <string name="start">Старт:</string>
+    <string name="finish">Финиш:</string>
+    <string name="changepass">Изменить пароль</string>
+    <string name="old_password">Старый пароль</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="except">Принять</string>
+    <string name="staart">Начать</string>
+    <string name="letsgo">Погнали? :)</string>
 </resources>

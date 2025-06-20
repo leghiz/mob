@@ -1,5 +1,6 @@
 package ru.fefu.helloworld
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -24,6 +25,11 @@ class UserOrOtherFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.startActivityButton.setOnClickListener {
+            val intent = Intent(requireContext(), NewActivity::class.java)
+            startActivity(intent)
+        }
 
         adapter = ActivitiesAdapter(emptyList()) { activity ->
             val detailFragment = DetailFragment.newInstance(activity)

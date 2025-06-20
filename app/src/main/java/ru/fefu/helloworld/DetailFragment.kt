@@ -27,16 +27,16 @@ class DetailFragment : Fragment() {
         val activity = arguments?.getParcelable<ActivityListItem.ActivityItem>("activity")!!
 
         with(binding) {
-            tvActivityType.text = activity.activityType
-            tvUsername.text = activity.username
-            tvDistance.text = activity.distance
-            tvTime.text = activity.time
-            tvTimeAgo.text = activity.timeAgo
-            tvStartTime.text = activity.startTime
-            tvEndTime.text = activity.endTime
-            etComment.setText(activity.comment ?: "")
+            activityTypeText.text = activity.activityType
+            usernameText.text = activity.username
+            distanceText.text = activity.distance
+            timeText.text = activity.time
+            timeAgoText.text = activity.timeAgo
+            startTimeText.text = activity.startTime
+            endTimeText.text = activity.endTime
+            commentText.setText(activity.comment ?: "")
 
-            btnBack.setOnClickListener {
+            back.setOnClickListener {
                 parentFragmentManager.popBackStack()
             }
         }
