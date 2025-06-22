@@ -3,7 +3,6 @@ package ru.fefu.helloworld
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 
 import androidx.recyclerview.widget.RecyclerView
@@ -15,7 +14,6 @@ class ActivityTypeAdapter(
 
     inner class ActivityTypeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val typeTextView: TextView = itemView.findViewById(R.id.typeText)
-        private val iconImageView: ImageView = itemView.findViewById(R.id.ic_cyclists)
 
         fun bind(activityType: ActivityType) {
             typeTextView.text = activityType.name

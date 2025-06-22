@@ -8,7 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ActivitiesAdapter(
     private var items: List<ActivityListItem>,
-    private val onClick: (ActivityListItem.ActivityItem) -> Unit
+    private val onClick: (ActivityListItem.ActivityItem) -> Unit,
+    private val onLongClick: (ActivityListItem.ActivityItem) -> Unit
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun getItemViewType(position: Int) = when (items[position]) {
@@ -24,7 +25,8 @@ class ActivitiesAdapter(
         else -> ActivityViewHolder(
             LayoutInflater.from(parent.context)
                 .inflate(R.layout.item_activity, parent, false),
-            onClick
+            onClick,
+            onLongClick
         )
     }
 
@@ -51,7 +53,8 @@ class ActivitiesAdapter(
 
     class ActivityViewHolder(
         view: View,
-        private val onClick: (ActivityListItem.ActivityItem) -> Unit
+        private val onClick: (ActivityListItem.ActivityItem) -> Unit,
+        private val onLongClick: (ActivityListItem.ActivityItem) -> Unit
     ) : RecyclerView.ViewHolder(view) {
         private val distanceView = view.findViewById<TextView>(R.id.distanceText)
         private val timeView = view.findViewById<TextView>(R.id.timeActivityTextView)
@@ -65,8 +68,13 @@ class ActivitiesAdapter(
             activityTypeView.text = item.activityType
             usernameView.text = "@${item.username}"
             timeAgoView.text = item.timeAgo
+
             itemView.setOnClickListener { onClick(item) }
+
+            itemView.setOnLongClickListener {
+                onLongClick(item)
+                true
+            }
         }
     }
 }
-
